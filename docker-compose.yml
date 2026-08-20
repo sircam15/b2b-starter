@@ -32,7 +32,8 @@ services:
       - redis
     ports:
       - "9000:9000"
-      - "5173:5173"environment:
+      - "5173:5173"
+  environment:
       - NODE_ENV=development
       - DATABASE_URL=postgresql://postgres:Gamble1504@medusa-sql-5zda3c:5432/medusa
       - REDIS_URL=redis://default:Gamble1504@medusa-redis-qx7on1:6379
