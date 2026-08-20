@@ -33,7 +33,7 @@ services:
     ports:
       - "9000:9000"
       - "5173:5173"
-  environment:
+    environment:
       - NODE_ENV=development
       - DATABASE_URL=postgresql://postgres:Gamble1504@medusa-sql-5zda3c:5432/medusa
       - REDIS_URL=redis://default:Gamble1504@medusa-redis-qx7on1:6379
@@ -41,7 +41,7 @@ services:
       - COOKIE_SECRET=p8TFUhOY/FXDSBtLoZYLlIMszLdQkcB4/8UTj1NRsqg=
       - STORE_CORS=http://192.168.0.235:8000
       - ADMIN_CORS=http://192.168.0.235:9000
-      - "AUTH_CORS=http://192.168.0.235:8000,http://192.168.0.235:9000"
+      - AUTH_CORS=http://192.168.0.235:8000,http://192.168.0.235:9000
     networks:
       - medusa_network
 
