@@ -62,7 +62,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - NEXT_PUBLIC_MEDUSA_BACKEND_URL=http://medusa:9000
+      - NEXT_PUBLIC_MEDUSA_BACKEND_URL=http://192.168.0.235:9000
     env_file:
       - apps/storefront/.env
     volumes:
